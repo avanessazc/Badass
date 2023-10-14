@@ -1,3 +1,4 @@
+vtysh <<-EOF
 configure terminal
   no ipv6 forwarding
 
@@ -35,3 +36,4 @@ configure terminal
   
   line vty
   exit
+EOF

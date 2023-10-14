@@ -5,7 +5,7 @@ ip link set dev vxlan10 up
 brctl addif br0 vxlan10
 brctl addif br0 eth1
 
-
+vtysh <<-EOF
 configure terminal
   no ipv6 forwarding
 
@@ -31,3 +31,4 @@ configure terminal
 
   router ospf
   exit
+EOF
